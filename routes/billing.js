@@ -19,7 +19,7 @@ function Verify_Bill_Amount(items,billAmount)
 
 }
 router.post('/', async (req, res) => {
-   // console.log(req.body.data)
+    console.log(req.body.data)
 
    let {customerName,contactNumber} = req.body.data.UserDetails
    let {items,billAmount}=req.body.data;

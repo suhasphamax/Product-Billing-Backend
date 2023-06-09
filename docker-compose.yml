@@ -1,0 +1,39 @@
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+    command: npm run start
+    # environment:
+    #   NODE_ENV: production
+    #   DB_HOST: db
+    #   DB_PORT: 3306
+    #   DB_USER: root
+    #   DB_PASSWORD: Phamax@2022
+    #   DB_NAME: product_billing_development
+    # depends_on:
+    #   - db
+    ports:
+      - "5000:5000"
+    # links:
+    #   - db
+
+#   db:
+#     image: mysql:8.0.31
+#     cap_add: // add capabilities.
+#       - SYS_NICE // sys_nice mentions high priority tasks.
+#     restart: always
+#     environment:
+#       - MYSQL_DATABASE=product_billing_development
+#       - MYSQL_ROOT_PASSWORD=Phamax@2022
+#     ports:
+#       - '3306:3306'
+#     volumes:
+#       - db:/var/lib/mysql
+#       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+
+# volumes:
+#   db:
+#     driver: local
+

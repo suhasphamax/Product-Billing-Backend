@@ -26,6 +26,14 @@ const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, async() =>{
     console.log('server running on http://localhost:5000');
-    //await sequelize.sync({force: true}); //This creates the table, dropping them first if they already existed
-    await sequelize.authenticate();
+
+    // sequelize.sync().then(function(){
+    //     console.log('DB connection sucessful.');
+    //   }, function(err){
+    //     // catch error here
+    //     console.log(err);
+
+    //   });
+    // //await sequelize.sync({force: true}); //This creates the table, dropping them first if they already existed
+    // await sequelize.authenticate();
 });
