@@ -22,10 +22,10 @@ app.use('/auth',authentication);
 app.use('/billing',billing);
 
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 19000;
 
 app.listen(PORT, async() =>{
-    console.log('server runnings on http://localhost:5001');
+    console.log('server running on http://localhost:5000');
 
     // sequelize.sync().then(function(){
     //     console.log('DB connection sucessful.');
