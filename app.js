@@ -22,7 +22,7 @@ app.use('/auth',authentication);
 app.use('/billing',billing);
 
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 9000;
 
 app.listen(PORT, async() =>{
     console.log('server running on http://localhost:5000');
