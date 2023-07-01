@@ -22,7 +22,7 @@ app.use('/auth',authentication);
 app.use('/billing',billing);
 
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 80;
 
 
 app.listen(PORT, async() =>{
